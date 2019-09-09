@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Alexa Archive</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3">
+          <ul>
+            <h4><a href="/lessons"><li>Lessons</li></a></h4>
+            <h4><a href="/assignments"><li>Assignments</li></a></h4>
+          </ul>
+        </div>
+        
+        <div class="col-md-9">
+          <%= yield  %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

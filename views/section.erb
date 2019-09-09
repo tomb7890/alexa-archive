@@ -1,0 +1,10 @@
+<article class="post">
+  <h2 class="highlight"><%=   %></h2>
+  <p>
+    <% @data.each do | d |   %>
+      <li>
+        <a href=" <%= '/' + d[:section] + '/' + d[:id] %> "><%=  d[:title]  %></a>
+      </li>
+    <% end  %>
+  </p>
+</article>
